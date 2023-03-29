@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>28 Mar 2023, 19:23</td>
+      <td>28 Mar 2023, 20:43</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">As a data consumer, I want to know genre of books are being borrowed the most</td>
-          <td      class="passed"    >2</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >3</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">3</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="16433700">0.016</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="36728000">0.036</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">As a data consumer, I want to know genre of books are being borrowed the most</span>
 
@@ -187,16 +187,17 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_2149466556.html">@Lev</a>
+       <a href="report-tag_2149497308.html">@lev</a>
+       <a href="report-tag_2147548349.html">@db</a>
 </div>
 
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.036</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">verify the the common book genre that&rsquo;s being borrowed</span>
 
@@ -207,16 +208,48 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.library.steps.Hooks.setUpDB()</span>
+
+  <span class="lead-duration duration">0.786</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -226,7 +259,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -234,7 +267,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Establish the database connection</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -261,7 +294,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I execute query to find most popular book genre</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.032</span>
 
 </div>
 
@@ -284,11 +317,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">verify <span class="argument">&quot;Fantasy&quot;</span> is the most popular book genre.</span>
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -297,39 +330,55 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>org.junit.ComparisonFailure:</a>
+
+
+
+
+
+
+
+
+
+
       </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.junit.ComparisonFailure: expected:&lt;[Fantasy]&gt; but was:&lt;[]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.library.steps.LevansStepDef.verify_is_the_most_popular_book_genre(LevansStepDef.java:28)
-	at &#10045;.verify &quot;Fantasy&quot; is the most popular book genre.(file:///C:/Users/papai/IdeaProjects/LibraryAppDB_Assignments/src/test/resources/features/us05.feature:7)
-</pre>
-      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-4" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.library.steps.Hooks.destroyDB()</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
 
   </div>
 </div>
